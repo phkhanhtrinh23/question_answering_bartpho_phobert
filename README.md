@@ -46,7 +46,7 @@ cd transformers
 pip3 install -e .
 ```
 
-3. After you have received the permission to download and use UIT-ViQuAD2.0, the structure of the dataset should be as follows:
+4. After you have received the permission to download and use UIT-ViQuAD2.0, the structure of the dataset should be as follows:
 ```text
 ├── data
 |  └── demo.json (not from UIT-ViQuAD2.0)
@@ -54,19 +54,19 @@ pip3 install -e .
 |  └── train.json
 ```
 
-4. Run `python data.py` to split the `train.json` into `new_train.json` and `valid.json` with 9:1 ratio respectively.
+5. Run `python data.py` to split the `train.json` into `new_train.json` and `valid.json` with 9:1 ratio respectively.
 
-5. Now you can easily train the model with this command `python train.py`.
+6. Now you can easily train the model with this command `python train.py`.
 
-6. You can validate the model by `python validate.py`. This file validates the score of the trained model based on `valid.json`
+7. You can validate the model by `python validate.py`. This file validates the score of the trained model based on `valid.json`
 
 **Note**: Of course, you can parse any arguments given in the `ArgumentParser` in both `train.py` and `validate.py` for better results.
 
-7. You can infer and evaluate the results of `test.json` by `python inference.py`.
+8. You can infer and evaluate the results of `test.json` by `python inference.py`.
 
 **Note**: Because the model cannot load and infer the whole dataset at once, `validate.py` and `inference.py` only supports inferring in batches.
 
-8. **SHOW TIME!** Now you can run your own demo website by using [Flask](https://flask.palletsprojects.com/en/2.2.x/) `python api.py`. The UI of the website is originated from `templates` folder. If possible, run this and share your results with me!
+9. **SHOW TIME!** Now you can run your own demo website by using [Flask](https://flask.palletsprojects.com/en/2.2.x/) `python api.py`. The UI of the website is originated from `templates` folder. If possible, run this and share your results with me!
 
 
 ## Demo
