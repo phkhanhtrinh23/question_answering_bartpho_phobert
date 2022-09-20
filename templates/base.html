@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Demo </title>
+    <style>
+        .message {
+            padding: 10px;
+            margin: 5px;
+            background-color: #f3f3f3
+        }
+        nav a {
+            color: #d64161;
+            font-size: 3em;
+            margin-left: 50px;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Question Answering</a>
+    </nav>
+    <hr>
+    <div class="context">
+        <h1>{% block heading %} {% endblock %}</h1>
+        {% block context %} {% endblock %}
+    </div>
+</body>
+</html>

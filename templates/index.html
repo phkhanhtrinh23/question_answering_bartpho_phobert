@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block heading %} Results {% endblock %}
+
+{% block context %}
+    {% for message in messages %}
+        <div class='message'>
+            <p>Question: {{ message['question'] }}</p>
+            <p>Context: {{ message['context'] }}</p>
+            <p>Answer: {{ message['answer'] }}</p>
+        </div>
+    {% endfor %}
+    <form action="{{ url_for('create') }}">
+        <input type="submit" value="Demo" />
+    </form>
+{% endblock %}

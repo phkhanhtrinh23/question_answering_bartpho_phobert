@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block heading %} Demo {% endblock %}
+
+{% block context %}
+    <form method="post">
+        <label for="question">Question</label>
+        <br>
+        <!-- <input type="text" name="title"
+               placeholder="Message title"
+               value="{{ request.form['title'] }}"></input> -->
+        <textarea name="question"
+               placeholder="Question"
+               rows="5"
+               cols="60"
+               >{{ request.form['question'] }}</textarea>
+        <br>
+
+        <label for="context">Context</label>
+        <br>
+        <textarea name="context"
+                  placeholder="Context"
+                  rows="15"
+                  cols="60"
+                  >{{ request.form['context'] }}</textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
