@@ -38,10 +38,10 @@ According to the orginal [paper](https://arxiv.org/abs/2109.09701), it is stated
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/phkhanhtrinh23/question_answering_bartpho.git
+   git clone https://github.com/phkhanhtrinh23/question_answering_bartpho_phobert.git
    ```
   
-2. Use any code editor to open the folder **question_answering_bartpho**.
+2. Use any code editor to open the folder **question_answering_bartpho_phobert**.
 
 3. Run `pip install -r requirements.txt` to install the required packages. 
 
