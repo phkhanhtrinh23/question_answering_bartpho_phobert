@@ -28,9 +28,9 @@ To get started, you should have prior knowledge on **Python** and **Pytorch** at
 
 - Data: [UIT-ViQuAD2.0](https://aihub.vn/competitions/35) dataset from VLSP2021.
 
-- Model: `question_answering_bartpho` is based on [BARTpho](https://github.com/VinAIResearch/BARTpho) model.
+- Model: `question_answering_bartpho_phobert` is based on [BARTpho](https://github.com/VinAIResearch/BARTpho) and [PhoBERT](https://github.com/VinAIResearch/PhoBERT) models.
 
-According to the orginal [paper](https://arxiv.org/abs/2109.09701), it is stated that *BARTpho-syllable and BARTpho-word are the first public large-scale monolingual sequence-to-sequence models pre-trained for Vietnamese. BARTpho uses the "large" architecture and the pre-training scheme of the sequence-to-sequence denoising autoencoder BART, thus it is especially suitable for generative NLP tasks*. Especially in this downstream task, based on our experiments, we choose **BARTpho-syllable** in preference to BARTpho-word.
+According to the orginal [paper](https://arxiv.org/abs/2109.09701), it is stated that *BARTpho-syllable and BARTpho-word are the first public large-scale monolingual sequence-to-sequence models pre-trained for Vietnamese. BARTpho uses the "large" architecture and the pre-training scheme of the sequence-to-sequence denoising autoencoder BART, thus it is especially suitable for generative NLP tasks*. Especially in this downstream task, based on our experiments, we choose **BARTpho-syllable** in preference to BARTpho-word, and **PhoBERT-large** in preference to PhoBERT-base.
 
 
 ## Installation and Run
@@ -81,13 +81,13 @@ pip3 install -e .
 Some results:
 
 <img src="./images/result_6.png"/>
-<p style="text-align:center"> Image 1 </p>
+<p style="text-align:center"> Image 1 (from BARTPho-syllable)</p>
 
 <img src="./images/result_7.png"/>
-<p style="text-align:center"> Image 2</p>
+<p style="text-align:center"> Image 2 (from PhoBERT-large)</p>
 
 <img src="./images/result_8.png"/>
-<p style="text-align:center"> Image 3 </p>
+<p style="text-align:center"> Image 3 (from PhoBERT-large)</p>
 
 
 ## Contribution
