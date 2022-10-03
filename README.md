@@ -80,13 +80,13 @@ pip3 install -e .
 ## Demo
 Some results:
 
-<img src="./images/result_1.png"/>
+<img src="./images/result_6.png"/>
 <p style="text-align:center"> Image 1 </p>
 
-<img src="./images/result_4.png"/>
+<img src="./images/result_7.png"/>
 <p style="text-align:center"> Image 2</p>
 
-<img src="./images/result_6.png"/>
+<img src="./images/result_8.png"/>
 <p style="text-align:center"> Image 3 </p>
 
 
