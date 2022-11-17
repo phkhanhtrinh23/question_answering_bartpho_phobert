@@ -1,5 +1,5 @@
 datasets==2.4.0
-evaluate==0.2.2
+evaluate==0.3.0
 flask==2.2.2
 huggingface-hub==0.9.1
 numpy==1.23.1
